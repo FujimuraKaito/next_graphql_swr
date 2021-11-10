@@ -16,6 +16,9 @@ const Home: NextPage = () => {
           <a>countries</a>
         </Link>
         <br />
+        <Link href={`/issues`}>
+          <a>issues</a>
+        </Link>
       </main>
     </>
   )
