@@ -4,6 +4,7 @@ const SAMPLE_DB = {
   articles: [
     { id: 1, title: 'foo', content: 'fooooo' },
     { id: 2, title: 'bar', content: 'baaaar' },
+    { id: 3, title: 'baz', content: 'baaaaz' },
   ],
 }
 
