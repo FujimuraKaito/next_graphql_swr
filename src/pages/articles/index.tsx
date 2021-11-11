@@ -33,10 +33,8 @@ const getArticles = () => {
   )
 
   if (error) return <div>failed to load</div>
-  if (!data) {
-    console.log('now loading...')
-    return <div>loading...</div>
-  }
+  if (!data) return <div>loading...</div>
+
   return data.getArticles.map((article) => (
     <li key={article.id}>{article.title}</li>
   ))
