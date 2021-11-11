@@ -8,8 +8,8 @@ const SAMPLE_DB = {
   ],
 }
 
-const getArticleResolver = ({ id }: { id: number }) =>
-  SAMPLE_DB.articles?.filter((article) => article.id === id)[0] ?? []
+const getArticleResolver = (_: any, { id }: { id: number }) =>
+  SAMPLE_DB.articles?.filter((article) => article.id === id)[0] ?? {}
 
 const getArticles = () => SAMPLE_DB.articles
 
