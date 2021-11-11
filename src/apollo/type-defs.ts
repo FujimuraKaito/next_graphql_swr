@@ -8,7 +8,7 @@ export const typeDefs: Config['typeDefs'] = gql`
   }
 
   type Query {
-    getArticle(id: Int): Article
+    getArticle(id: Int!): Article
     getArticles: [Article]
   }
 `
