@@ -1,7 +1,7 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import useSWR from 'swr'
 
-const API = '/api/graphql' // GraphQLエンドポイントのURL
+const API = '/api/graphql'
 
 const getArticlesQuery = gql`
   query {
