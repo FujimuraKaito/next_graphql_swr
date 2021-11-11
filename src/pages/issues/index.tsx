@@ -1,10 +1,10 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import useSWR from 'swr'
 
-const API = 'https://api.github.com/graphql' // GraphQLエンドポイントのURL
-const repositoryOwner = 'octocat' // 取得するリポジトリ所有者のユーザー名
-const repositoryName = 'Hello-World' // 取得するリポジトリの名前
-const issuesFirst = 100 // 取得するIssueの数
+const API = 'https://api.github.com/graphql' // endpoint
+const repositoryOwner = 'vercel' // the repository owner
+const repositoryName = 'next.js' // the repository name
+const issuesFirst = 100 // the number of issues
 
 const getRepositoryQuery = gql`
   query GetRepository(
