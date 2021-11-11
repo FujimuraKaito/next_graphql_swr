@@ -61,21 +61,6 @@ const getIssues = () => {
       })
   )
 
-  const demoQuery = gql`
-    query {
-      getArticles {
-        id
-        title
-        content
-      }
-    }
-  `
-  const demoClient = new GraphQLClient('/api/graphql')
-  const demoData = demoClient.request(demoQuery)
-  demoData.then((data) => {
-    console.log(data)
-  })
-
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
   return data.repository.issues.edges.map((issue) => (
