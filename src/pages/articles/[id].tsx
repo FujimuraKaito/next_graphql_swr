@@ -45,11 +45,11 @@ const getArticles = () => {
   return <li key={data.getArticle.id}>{data.getArticle.title}</li>
 }
 
-const ArticlePage = () => (
+const SingleArticlePage = () => (
   <>
     <h1>Articles List</h1>
     {getArticles()}
   </>
 )
 
-export default ArticlePage
+export default SingleArticlePage
