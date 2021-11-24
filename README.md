@@ -1,3 +1,5 @@
+### This is an article from [Zenn.dev](https://zenn.dev/fujiyama)
+
 ## Get Github Access Token
 1. Get github access token referencing [here](https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token).
 2. Add this token to `.env.local`
